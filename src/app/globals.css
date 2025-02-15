@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+::-webkit-scrollbar {
+  @apply w-0 lg:w-1.5 bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary-900;
+}
+
+::selection {
+  @apply text-primary-950 bg-primary-50;
+}
