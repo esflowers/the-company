@@ -1,0 +1,8 @@
+export const linkCompany = 'https://profesionalizacionvirtual.com/'
+export const linkMail = 'mailto:hectorjavier12@hotmail.com'
+export const linkPhone = 'tel:+529613006743'
+export const linkContact = '/contact'
+export const linkDevelopment = '/development'
+export const linkMarketing = '/marketing'
+export const linkCourses = '/courses'
+export const linkBlog = '/blog'
