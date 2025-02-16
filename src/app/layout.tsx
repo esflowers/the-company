@@ -1,16 +1,6 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { brand, sans, mono } from "./fonts/fonts";
 import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Profesionalización Virtual",
@@ -23,10 +13,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+    <html lang="es" className={`${brand.variable} ${sans.variable} ${mono.variable} antialiased scroll-smooth`}>
+      <body className='md:h-dvh md:max-h-dvh p-6 sm:p-8 md:p-0 text-primary-200 bg-primary-950'>
         {children}
       </body>
     </html>
