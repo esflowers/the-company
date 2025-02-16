@@ -1,0 +1,1 @@
+type ModeTheme = 'normal' | 'dev' | 'mark' | 'edu' | 'blog'

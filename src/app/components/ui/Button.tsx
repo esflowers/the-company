@@ -12,7 +12,7 @@ type AnchorProps = React.AnchorHTMLAttributes<HTMLAnchorElement> & {
 type Props = (ButtonProps | AnchorProps) & {
     isIcon?: boolean
     variant?: 'colorfull' | 'outline' | 'text'
-    mode?: 'normal' | 'dev' | 'mark' | 'edu' | 'blog'
+    mode?: ModeTheme
     size?: 'sm' | 'md' | 'lg' | 'xl'
 }
 
