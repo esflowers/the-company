@@ -16,7 +16,7 @@ type Props = (ButtonProps | AnchorProps) & {
     size?: 'sm' | 'md' | 'lg' | 'xl'
 }
 
-export default function BtnIcon({children, variant = 'colorfull', mode = 'normal', size = 'md', isIcon, isLink, ...props}: Props) {
+export default function Button({children, variant = 'colorfull', mode = 'normal', size = 'md', isIcon, isLink, ...props}: Props) {
     const styles = 'w-fit h-fit group flex items-center justify-center gap-2 font-brand font-medium text-center transition duration-150 cursor-pointer'
 
     const styleConfig = {
