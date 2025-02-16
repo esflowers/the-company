@@ -10,19 +10,20 @@ type AnchorProps = React.AnchorHTMLAttributes<HTMLAnchorElement> & {
 }
 
 type Props = (ButtonProps | AnchorProps) & {
+    isIcon?: boolean
     variant?: 'colorfull' | 'outline' | 'text'
     mode?: 'normal' | 'dev' | 'mark' | 'edu' | 'blog'
     size?: 'sm' | 'md' | 'lg' | 'xl'
 }
 
-export default function BtnIcon({children, variant = 'colorfull', mode = 'normal', size = 'md', isLink, ...props}: Props) {
+export default function BtnIcon({children, variant = 'colorfull', mode = 'normal', size = 'md', isIcon, isLink, ...props}: Props) {
     const styles = 'w-fit h-fit group flex items-center justify-center gap-2 font-brand font-medium text-center transition duration-150 cursor-pointer'
 
     const styleConfig = {
         colorfull: {
             base: 'rounded-md hover:opacity-85',
             sizes: {
-                sm: "px-2 pt-1 pb-0.5 text-sm",
+                sm: "px-2 pt-1.5 pb-1 text-sm",
                 md: "px-2.5 pt-1.5 pb-1 text-base",
                 lg: "px-3 pt-2 pb-1.5 text-lg",
                 xl: "px-3.5 pt-2.5 pb-2 text-xl"
@@ -31,7 +32,7 @@ export default function BtnIcon({children, variant = 'colorfull', mode = 'normal
         outline: {
             base: 'rounded-md bg-transparent border',
             sizes: {
-                sm: "px-2 pt-1 pb-0.5 text-sm",
+                sm: "px-2 pt-1.5 pb-1 text-sm",
                 md: "px-2.5 pt-1.5 pb-1 text-base",
                 lg: "px-3 pt-2 pb-1.5 text-lg",
                 xl: "px-3.5 pt-2.5 pb-2 text-xl"
@@ -44,6 +45,36 @@ export default function BtnIcon({children, variant = 'colorfull', mode = 'normal
                 md: "text-base",
                 lg: "text-lg",
                 xl: "text-xl pt-1"
+            }
+        }
+    }
+
+    const iconStyles = {
+        colorfull: {
+            base: 'rounded-md hover:opacity-85',
+            sizes: {
+                sm: "p-1.5",
+                md: "p-2",
+                lg: "p-2.5",
+                xl: "p-3"
+            }
+        },
+        outline: {
+            base: 'rounded-md bg-transparent border',
+            sizes: {
+                sm: "p-1.5",
+                md: "p-2",
+                lg: "p-2.5",
+                xl: "p-3"
+            }
+        },
+        text: {
+            base: 'bg-transparent p-0 pt-0.5',
+            sizes: {
+                sm: "",
+                md: "",
+                lg: "",
+                xl: ""
             }
         }
     }
@@ -76,7 +107,9 @@ export default function BtnIcon({children, variant = 'colorfull', mode = 'normal
         }
     }
 
-    const classes = `${styles}  ${styleConfig[variant].sizes[size]} ${styleConfig[variant].base} ${modeStyles[mode]?.[variant]}`
+    const classes = isIcon 
+        ? `${styles} ${iconStyles[variant].sizes[size]} ${iconStyles[variant].base} ${modeStyles[mode]?.[variant]}` 
+        : `${styles} ${styleConfig[variant].sizes[size]} ${styleConfig[variant].base} ${modeStyles[mode]?.[variant]}`
 
     if (isLink) {
         return (
