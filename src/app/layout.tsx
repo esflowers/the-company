@@ -14,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es" className={`${brand.variable} ${sans.variable} ${mono.variable} antialiased scroll-smooth`}>
-      <body className='md:h-dvh md:max-h-dvh p-6 sm:p-8 md:p-0 text-primary-200 bg-primary-950'>
+      <body className='md:h-dvh md:max-h-dvh p-0 text-primary-200 bg-primary-950'>
         {children}
       </body>
     </html>

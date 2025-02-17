@@ -17,7 +17,7 @@ export default function Department({
   description = 'Somos una agencia creativa especializada en soluciones digitales.',
 }: Props) {
     return (
-        <div className={`w-full md:h-full grid grid-cols-1 md:grid-cols-3 gap-9 md:gap-12 lg:gap-14 xl:gap-20 2xl:gap-24 ${mode}`}>
+        <div className={`w-full md:h-full p-6 sm:p-8 md:p-0 grid grid-cols-1 md:grid-cols-3 gap-9 md:gap-12 lg:gap-14 xl:gap-20 2xl:gap-24 ${mode}`}>
             <div className="h-dvh md:h-full md:col-span-1 pt-20 md:pt-0 md:p-12 md:pr-0 lg:p-14 lg:pr-0 xl:pl-20 2xl:pl-24 flex flex-col md:justify-between gap-8">
                 <Header mode={mode} />
                 <Menu mode={mode} />
