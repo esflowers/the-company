@@ -1,0 +1,11 @@
+export { IconArrowLink } from "./IconArrowLink";
+export { IconClose } from "./IconClose";
+export { IconFrame } from "./IconFrame";
+export { IconMenu } from "./IconMenu";
+export { IconPV } from "./IconPV";
+export { IconSchool } from "./IconSchool";
+export { IconSend } from "./IconSend";
+export { IconServer } from "./IconServer";
+export { IconTable } from "./IconTable";
+export { IconTrendingUp } from "./IconTrendingUp";
+export { IconWorld } from "./IconWorld";
