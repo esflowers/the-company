@@ -14,30 +14,30 @@
   @apply text-primary-950 bg-primary-300;
 }
 
-body.dev{
+.dev{
   background: theme('colors.primary.950');
   background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 1800 1800' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E"),radial-gradient(circle at 6% 89%, theme('colors.dev.700') 7.030494771069514%,transparent 69.89824169831762%),radial-gradient(circle at 68% 22%, theme('colors.primary.950') 15%,transparent 58%),radial-gradient(circle at 32% 53%, theme('colors.primary.950') 20%,transparent 61%),radial-gradient(circle at 100% 58%, theme('colors.primary.950') 7%,transparent 70%),radial-gradient(circle at 27% 44%, theme('colors.primary.950') 10%,transparent 81%),radial-gradient(circle at 28% 16%, theme('colors.primary.950') 15%,transparent 74%),radial-gradient(circle at 93% 14%, theme('colors.primary.950') 12%,transparent 88%);
   background-blend-mode:overlay,normal,normal,normal,normal,normal,normal,normal;
 }
 
-body.mark{
+.mark{
   background: theme('colors.primary.950');
   background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 1800 1800' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E"),radial-gradient(circle at 13% 4%, theme('colors.mark.700') 8.813641253899728%,transparent 55.69415592696799%),radial-gradient(circle at 7% 81%, theme('colors.primary.950') 16%,transparent 53%),radial-gradient(circle at 11% 29%, theme('colors.primary.950') 8%,transparent 74%),radial-gradient(circle at 39% 52%, theme('colors.primary.950') 6%,transparent 68%),radial-gradient(circle at 90% 50%, theme('colors.primary.950') 2%,transparent 85%);
   background-blend-mode:overlay,normal,normal,normal,normal,normal;
 }
 
-body.edu{
+.edu{
   background: theme('colors.primary.950');
   background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 1800 1800' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E"),radial-gradient(circle at 68% 1%, theme('colors.primary.950') 7%,transparent 61%),radial-gradient(circle at 9% 83%, theme('colors.primary.950') 28.4310370426059%,transparent 75.20874270174224%),radial-gradient(circle at 58% 29%, theme('colors.primary.950') 19%,transparent 81%),radial-gradient(circle at 32% 89%, theme('colors.edu.700') 35.59364255152035%,transparent 55.84541236186176%),radial-gradient(circle at 85% 56%, theme('colors.edu.700') 0%,transparent 78%),radial-gradient(circle at 3% 45%, theme('colors.edu.700') 48.920076739841484%,transparent 67.52553403267532%),radial-gradient(circle at 63% 14%, theme('colors.primary.950') 9%,transparent 69%),radial-gradient(circle at 51% 27%, theme('colors.primary.950') 4%,transparent 50%),radial-gradient(circle at 26% 50%, theme('colors.edu.700') 20%,transparent 71%),radial-gradient(circle at 65% 83%, theme('colors.primary.950') 2%,transparent 90%);
   background-blend-mode:overlay,normal,normal,normal,normal,normal,normal,normal,normal,normal,normal;
 }
 
-body.cont{
+.cont{
   background: theme('colors.primary.950');
   background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 1800 1800' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E"),radial-gradient(circle at 22% 18%, theme('colors.primary.950') 20.896764782891754%,transparent 71.81999464541818%),radial-gradient(circle at 69% 93%, theme('colors.primary.950') 30.58105963072975%,transparent 80.18487040773957%),radial-gradient(circle at 47% 2%, theme('colors.primary.950') 47.379974605530265%,transparent 100.6278060895922%),radial-gradient(circle at 83% 90%, theme('colors.white') 32.555815028683575%,transparent 88.10773884501434%);
   background-blend-mode:overlay,normal,normal,normal,normal;
 }
 
-body.blog{
+.blog{
   @apply text-primary-800 bg-white;
 }
