@@ -4,6 +4,7 @@ export const linkPhone = 'tel:+529613006743'
 export const linkMap = 'https://maps.app.goo.gl/HFPZE5p23zdrWXzPA'
 export const linkInterview = 'https://www.facebook.com/share/v/15wJHf8ekQ/'
 
+export const linkHome = '/'
 export const linkContact = '/contact'
 export const linkDevelopment = '/development'
 export const linkMarketing = '/marketing'

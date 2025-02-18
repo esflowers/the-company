@@ -1,19 +1,39 @@
-import { linkBlog, linkContact, linkCourses, linkDevelopment, linkMarketing } from "@/app/ui/links";
+"use client"
+
+import { usePathname } from "next/navigation";
+import { linkBlog, linkContact, linkCourses, linkDevelopment, linkHome, linkMarketing } from "@/app/ui/links";
 import Button from "../ui/Button";
 
 interface Props {
     mode?: ModeTheme
 }
 
+const links = [
+    { href: linkHome, label: "Inicio" },
+    { href: linkDevelopment, label: "Desarrollo" },
+    { href: linkMarketing, label: "Marketing Digital" },
+    { href: linkCourses, label: "Cursos" },
+    { href: linkBlog, label: "Blog" },
+    { href: linkContact, label: "Contacto" },
+]
+
 export default function Menu({ mode = 'normal' }: Props) {
+    const pathname = usePathname();
+
     return (
         <nav className="space-y-1">
-            {/* <span className="font-bold">&mdash;</span> */}
-            <Button isLink={true} href={linkDevelopment} variant="text" mode={mode} size="md">Desarrollo</Button>
-            <Button isLink={true} href={linkMarketing} variant="text" mode={mode} size="md">Marketing Digital</Button>
-            <Button isLink={true} href={linkCourses} variant="text" mode={mode} size="md">Cursos</Button>
-            <Button isLink={true} href={linkBlog} variant="text" mode={mode} size="md">Blog</Button>
-            <Button isLink={true} href={linkContact} variant="text" mode={mode} size="md">Contacto</Button>
+            {links.map(({ href, label }) => (
+                <Button
+                    key={href}
+                    isLink={true}
+                    href={href}
+                    variant="text"
+                    mode={mode}
+                    size="md"
+                >
+                    {pathname === href ? <span>&mdash;</span> : label}
+                </Button>
+            ))}
         </nav>
     )
 }
