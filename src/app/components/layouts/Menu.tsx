@@ -1,7 +1,7 @@
 "use client"
 
 import { usePathname } from "next/navigation";
-import { linkBlog, linkContact, linkCourses, linkDevelopment, linkHome, linkMarketing } from "@/app/ui/links";
+import { linkBlog, linkContact, linkCourses, linkDevelopment, linkHome, linkMarketing } from "@/app/ui/consts";
 import Button from "../ui/Button";
 
 interface Props {
@@ -24,10 +24,10 @@ export default function Menu({ mode = 'normal', isOpen = false }: Props) {
 
     const modeBg = {
         normal: 'bg-primary-950',
-        dev: 'bg-dev-950',
-        mark: 'bg-mark-950',
-        edu: 'bg-edu-950',
-        blog: 'bg-primary-100',
+        dev: 'bg-dev-700',
+        mark: 'bg-mark-700',
+        edu: 'bg-edu-700',
+        blog: 'bg-white',
     }
 
     return (
