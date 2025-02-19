@@ -32,12 +32,13 @@
   background-blend-mode:overlay,normal,normal,normal,normal,normal,normal,normal,normal,normal,normal;
 }
 
-.cont{
-  background: theme('colors.primary.950');
-  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 1800 1800' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E"),radial-gradient(circle at 22% 18%, theme('colors.primary.950') 20.896764782891754%,transparent 71.81999464541818%),radial-gradient(circle at 69% 93%, theme('colors.primary.950') 30.58105963072975%,transparent 80.18487040773957%),radial-gradient(circle at 47% 2%, theme('colors.primary.950') 47.379974605530265%,transparent 100.6278060895922%),radial-gradient(circle at 83% 90%, theme('colors.white') 32.555815028683575%,transparent 88.10773884501434%);
-  background-blend-mode:overlay,normal,normal,normal,normal;
-}
-
 .blog{
   @apply text-primary-800 bg-white;
+}
+
+.fusion{
+  background-color: theme('colors.primary.950');
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 1800 1800' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E"),radial-gradient(circle at 10% 97%, theme('colors.dev.700') 1%,transparent 64.44884123657364%),radial-gradient(circle at 9% 17%, theme('colors.mark.700') 30.0686703865386%,transparent 73.99910692315804%),radial-gradient(circle at 91% 94%, theme('colors.edu.700') 7%,transparent 63.649483816964285%),radial-gradient(circle at 93% 9%, theme('colors.white') 15%,transparent 58%),radial-gradient(circle at 32% 53%, theme('colors.white') 20%,transparent 61%),radial-gradient(circle at 27% 44%, theme('colors.edu.700') 10%,transparent 81%),radial-gradient(circle at 93% 14%, theme('colors.mark.700') 12%,transparent 88%);
+  background-blend-mode:overlay,normal,normal,normal,normal,normal,normal,normal;
+  background-position: center;
 }
