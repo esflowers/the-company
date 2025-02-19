@@ -6,6 +6,7 @@ import Button from "../ui/Button";
 
 interface Props {
     mode?: ModeTheme
+    isOpen?: boolean
 }
 
 const links = [
@@ -17,11 +18,20 @@ const links = [
     { href: linkContact, label: "Contacto" },
 ]
 
-export default function Menu({ mode = 'normal' }: Props) {
-    const pathname = usePathname();
+export default function Menu({ mode = 'normal', isOpen = false }: Props) {
+    const pathname = usePathname()
+    const visibility = isOpen ? 'translate-x-0' : 'translate-x-full'
+
+    const modeBg = {
+        normal: 'bg-primary-950',
+        dev: 'bg-dev-950',
+        mark: 'bg-mark-950',
+        edu: 'bg-edu-950',
+        blog: 'bg-primary-100',
+    }
 
     return (
-        <nav className="space-y-1">
+        <nav className={`w-dvw h-dvh fixed bottom-0 left-0 z-40 pt-20 px-6 sm:px-8 flex flex-col items-end gap-2 ${modeBg[mode]} md:size-fit md:relative md:z-10 md:p-0 md:items-start md:gap-1 md:bg-transparent transition-transform duration-200 ${visibility} md:translate-x-0`}>
             {links.map(({ href, label }) => (
                 <Button
                     key={href}
@@ -29,8 +39,7 @@ export default function Menu({ mode = 'normal' }: Props) {
                     href={href}
                     variant="text"
                     mode={mode}
-                    size="md"
-                >
+                    size="md">
                     {pathname === href ? <span>&mdash;</span> : label}
                 </Button>
             ))}
