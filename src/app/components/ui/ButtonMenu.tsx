@@ -13,7 +13,7 @@ type Props = ButtonProps & {
 export default function ButtonMenu({ mode = 'normal', isOpen = false, ...props }: Props) {
     return (
         <Button variant="text" isIcon={true} mode={mode} className="md:hidden" {...(props as ButtonProps)}>
-            {isOpen ? <IconClose size="24" /> : <IconMenu />}
+            {isOpen ? <IconClose size="26" /> : <IconMenu size="26" />}
         </Button>
     )
 }
