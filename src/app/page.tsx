@@ -11,8 +11,8 @@ export default function Home() {
   return (
     <Department classDescription="hidden md:flex">
       <main className="space-y-12 xl:space-y-14">
-        <div className="flex flex-col gap-4 pb-4">
-          <h2 className="font-brand font-[450] text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl select-none">Profesionalización Virtual</h2>
+        <div className="flex flex-col gap-4 pb-4 md:pb-0">
+          <h2 className="font-brand font-[440] text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl select-none">Profesionalización Virtual</h2>
           <h2 className="font-brand font-extralight text-pretty text-2xl md:hidden">{textCompany}</h2>
         </div>
 
