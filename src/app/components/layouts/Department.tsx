@@ -29,7 +29,7 @@ export default function Department({
                 <Header mode={mode} isOpen={isOpen} setIsOpen={setIsOpen} />
                 <Menu mode={mode} isOpen={isOpen} />
                 <div className="space-y-1.5">
-                    <h1 className="font-brand font-semibold text-pretty text-3xl md:text-4xl xl:text-5xl">{title}</h1>
+                    <h1 className="h1">{title}</h1>
                     <h2 className={`font-brand font-extralight text-pretty text-2xl lg:text-3xl ${classDescription}`}>{description}</h2>
                 </div>
             </div>
