@@ -1,11 +1,10 @@
 import Department from "./components/layouts/Department";
 import { IconFrame, IconSchool, IconServer, IconTable, IconTrendingUp, IconWorld } from "./components/icons";
-import { companyMail, companyPhone, companyUbication, linkDevelopment, linkMail, linkMap, linkMarketing, linkPhone, textCompany } from "./ui/consts";
+import { linkDevelopment, linkMarketing, textCompany } from "./ui/consts";
 import Quote from "./components/ui/Quote";
-import CardFusion from "./components/ui/CardFusion";
 import ItemList from "./components/ui/ItemList";
-import Link from "next/link";
 import Button from "./components/ui/Button";
+import SectionContact from "./components/ui/SectionContact";
 
 export default function Home() {
   return (
@@ -112,22 +111,7 @@ export default function Home() {
           </ul>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 xl:gap-9">
-          <div>
-            <CardFusion className="font-semibold text-3xl lg:text-4xl">Hagamos algo increíble...</CardFusion>
-          </div>
-          <ul>
-            <ItemList isFirst={true}>
-              <Link href={linkMail} className="w-full text-center md:text-start transition duration-150 group-hover:text-white">{companyMail}</Link>
-            </ItemList>
-            <ItemList className="tracking-wide">
-              <Link href={linkPhone} className="w-full text-center md:text-start transition duration-150 group-hover:text-white">{companyPhone}</Link>
-            </ItemList>
-            <ItemList className="leading-tight">
-              <Link href={linkMap} className="w-full text-center md:text-start transition duration-150 group-hover:text-white">{companyUbication}</Link>
-            </ItemList>
-          </ul>
-        </div>
+        <SectionContact />
       </main>
     </Department>
   )
